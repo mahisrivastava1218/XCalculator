@@ -8,7 +8,7 @@ export default function Calculator(){
         <div style={{height:"80vh",width:"100vh",display:"flex",alignItems:"center",flexDirection:"column",border:"1px solid blue"}}>
             <h1>React Calculator</h1>
             <div style={{width:"100%",display:"flex",alignContent:"center",justifyContent:"center"}}>
-                <input placeholder=""  className={styles.input} onChange={(e)=>setUserInput(e.target.value)}/>
+                <input placeholder=""  className={styles.input} onChange={(e)=>setUserInput(e.target.value)} value={userInput}/>
             </div>
             <div className={styles.container}>
             {arr.map((item,idx)=>(
